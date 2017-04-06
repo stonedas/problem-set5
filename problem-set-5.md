@@ -49,17 +49,16 @@ The ``pysam`` package makes it easy to parse through a ``bam`` file
 and extract important attributes. For this problem write a python program
 named ``problem_4.py`` that parses a bam file and reports the following metrics: 
     
-    1) The total number of alignments on the positive and the negative strand. 
-    Use the Sam Flag attribute to determine if the alignment is on the forward or reverse
-    strand. 16 indicates an alignment on the reverse strand and 0 defines positive 
-    for this experiment. (hint: use the ``.flag`` attribute of an ``AlignedSegment``). More
-    information about these Flags in section 1.4 of the SAM 
-    [specification](http://samtools.github.io/hts-specs/SAMv1.pdf) 
+1. The total number of alignments on the positive and the negative strand. 
+Use the Sam Flag attribute to determine if the alignment is on the forward or reverse
+strand. 16 indicates an alignment on the reverse strand and 0 defines positive 
+for this experiment. (hint: use the ``.flag`` attribute of an ``AlignedSegment``). More
+information about these Flags in section 1.4 of the SAM [specification](http://samtools.github.io/hts-specs/SAMv1.pdf) 
     
-    2) The total number of alignments with no mismatches and the number of alignments
-    with more than zero mismatches. The NM tag records the edit distance between
-    the sequence and the reference. (hint: use the ``.get_tag()`` method to extract
-    the ``NM`` tag value). 
+2. The total number of alignments with no mismatches and the number of alignments
+with more than zero mismatches. The NM tag records the edit distance between
+the sequence and the reference. (hint: use the ``.get_tag()`` method to extract
+the ``NM`` tag value). 
 
 FYI to view the contents of a bam file as plain-text, use samtools view:
 
